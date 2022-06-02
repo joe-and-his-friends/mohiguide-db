@@ -4,7 +4,9 @@ services:
     restart: always
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: mohiguide
+      MONGO_INITDB_ROOT_PASSWORD: mohiguide0602
+    volumes:
+      - ./data:/data/db 
 
   mongo-express:
     image: mongo-express
